@@ -15,4 +15,4 @@ Default ports used by Kestrel:
 
 Edit and uncomment block in Program.cs to use a different port and pass certificate path/password (optional)
 
-Navigate in a browser to http://localhost:5000
+Navigate in a browser to http(s)://localhost:5000 or any other port specified
