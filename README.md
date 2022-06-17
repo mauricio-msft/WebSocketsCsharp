@@ -14,3 +14,5 @@ Default ports used by Kestrel:
 + https://localhost:5001 (when a local development certificate is present)
 
 Edit and uncomment block in Program.cs to use a different port and pass certificate path/password (optional)
+
+Navigate in a browser to http://localhost:<port>
