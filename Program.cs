@@ -3,9 +3,12 @@ var builder = WebApplication.CreateBuilder(args);
 /* Scott this is optional if want to change default port and use https
    Use listenOptions.UseHttps("path-to-pfx", "optional password");
 
-serverOptions.ListenAnyIP(8000, listenOptions =>
+builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-	listenOptions.UseHttps("../sslcert/apimcloud.com.pfx", "");
+    serverOptions.ListenAnyIP(8000, listenOptions =>
+    {
+	    listenOptions.UseHttps("../sslcert/apimcloud.com.pfx", "");
+    });
 });
 
 */
